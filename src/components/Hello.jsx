@@ -5,7 +5,7 @@ import "../styles/hello.scss";
 
 const Hello = () => {
   return (
-    <div className="hello-container">
+    <div className="container grid grid-cols-1 lg:grid-cols-2">
       <div className="description">
         <h1 className="title">Hello!</h1>
         <p>

@@ -5,8 +5,8 @@ import "../styles/projects.scss";
 const Projects = () => {
   return (
     <div className="projects-container">
-      <h1 className="our-project title">Our Projects</h1>
-      <div className="project-images">
+      <h1 className="our-project title container">Our Projects</h1>
+      <div className="project-images grid grid-cols-2 md:grid-cols-4 ">
         <img
           src="https://cdn.pixabay.com/photo/2023/01/22/13/46/swans-7736415__340.jpg"
           alt=""

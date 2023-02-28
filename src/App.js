@@ -1,4 +1,5 @@
 import Greeting from "./components/GreetingPart/Greeting";
+import Header from "./components/Header";
 import Hello from "./components/Hello";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -11,6 +12,7 @@ function App() {
     <div>
       <AuthContextProvider>
         <Navbar />
+        <Header />
         <Greeting />
         <Hello />
         <Projects />

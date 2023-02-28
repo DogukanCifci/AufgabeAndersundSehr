@@ -9,7 +9,7 @@ const SolutionsCard = ({ element }) => {
   return (
     <div className="solution-card">
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="text-[13px] w-full md:w-[60%]">{description}</p>
     </div>
   );
 };

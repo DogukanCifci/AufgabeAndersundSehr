@@ -8,14 +8,13 @@
   align-items: center;
 
   h1 {
-    width: 75%;
     border: 1px solid purple;
   }
   .project-images {
     margin-top: 50px;
     img {
-      width: 25%;
-      height: 450px;
+      width: 100%;
+      height: 100%;
     }
   }
 }

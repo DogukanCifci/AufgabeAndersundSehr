@@ -8,8 +8,8 @@ import "../../styles/greetingCards.scss";
 
 const Greeting = () => {
   return (
-    <div className="general-container">
-      <div className="greeting-container">
+    <div className="general-container border  ">
+      <div className="container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 px-6 lg:px-0">
         {data.map((element, index) => {
           return (
             <GreetingCards
