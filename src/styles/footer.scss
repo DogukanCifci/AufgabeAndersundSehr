@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .each-icon {
@@ -27,4 +29,31 @@
   align-items: center;
   margin-top: 70px;
   font-size: 25px;
+}
+
+.up-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50%);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 65px;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: 900;
+  color: purple;
+  font-size: 24px;
+  margin: -20px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: rgb(23, 100, 168);
+    cursor: pointer;
+  }
 }

@@ -62,7 +62,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="up-button">
-        <MdOutlineKeyboardArrowUp />
+        <div className="button">
+          <MdOutlineKeyboardArrowUp />
+        </div>
       </div>
     </div>
   );
