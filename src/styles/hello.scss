@@ -1,22 +1,18 @@
 .hello-container {
-  width: 75%;
-  padding: 500px 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-  margin-inline: auto;
+  margin-top: 120px;
   .description {
-    border: 1px solid purple;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
     margin-right: 100px;
     p {
       color: gray;
       font-size: 18px;
       line-height: 25px;
     }
+  }
+  .hello-image {
+    display: flex;
+    justify-content: flex-end;
   }
 }

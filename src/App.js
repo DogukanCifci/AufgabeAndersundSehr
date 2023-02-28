@@ -1,4 +1,5 @@
 import Events from "./components/EventsPart/Events";
+import Footer from "./components/Footer";
 import Greeting from "./components/GreetingPart/Greeting";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
@@ -20,6 +21,7 @@ function App() {
         <Solutions />
         <Testimonials />
         <Events />
+        <Footer />
       </AuthContextProvider>
     </div>
   );

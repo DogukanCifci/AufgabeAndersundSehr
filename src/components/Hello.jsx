@@ -5,7 +5,7 @@ import "../styles/hello.scss";
 
 const Hello = () => {
   return (
-    <div className="container grid grid-cols-1 lg:grid-cols-2">
+    <div className="hello-container container grid grid-cols-1 lg:grid-cols-2">
       <div className="description">
         <h1 className="title">Hello!</h1>
         <p>
@@ -21,7 +21,7 @@ const Hello = () => {
       </div>
       <div className="hello-image">
         <img
-          src="https://cdn.pixabay.com/photo/2023/02/05/17/25/leaves-7770035__340.jpg"
+          src="https://cdn.pixabay.com/photo/2013/04/11/19/46/building-102840__340.jpg"
           alt="helloPicture"
         />
       </div>
