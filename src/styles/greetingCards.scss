@@ -1,6 +1,7 @@
 .general-container {
-  background-color: rgb(228, 221, 221);
+  background-color: aliceblue;
   margin-inline: auto;
+  border: 3px solid white;
 }
 
 .greeting-container {
@@ -16,6 +17,7 @@
 }
 
 .cards {
+  border: 3px solid purple;
   color: black;
   background-color: white;
   display: flex;
