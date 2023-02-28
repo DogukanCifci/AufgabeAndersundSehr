@@ -1,0 +1,76 @@
+.navbar-container {
+  background-image: url("https://cdn.pixabay.com/photo/2023/02/14/18/55/flowers-7790227_960_720.jpg");
+  width: 100%;
+  height: 800px;
+  background-position: center center;
+  background-size: contain;
+  padding: 80px 0;
+}
+
+//NAVBAR TOP PART
+.navbar {
+  width: 75%;
+  margin-inline: auto;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  //LEFT PART
+  &__left {
+    display: flex;
+    flex-direction: column;
+    &-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      margin-bottom: 100px;
+      img {
+        width: 80px;
+        margin-right: 20px;
+      }
+      span {
+        font-weight: 900;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+
+    &-down {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+  }
+
+  //RIGHT PART
+  &__right {
+    ul {
+      list-style: none;
+
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+//NAVBAR DOWN PART
+.navbar-down {
+  margin-left: 150px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: 100;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  span {
+    font-weight: 30px;
+    font-weight: 900;
+  }
+}

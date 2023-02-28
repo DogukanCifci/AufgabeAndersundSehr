@@ -1,0 +1,52 @@
+.testimonials-container {
+  width: 100%;
+  background-color: white;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  .content {
+    width: 87.5%;
+    border: 1px solid purple;
+    display: flex;
+  }
+}
+
+.tirnak-isareti {
+  position: relative;
+  display: flex;
+  padding-left: 40px;
+  img {
+    width: 45px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+
+  .description {
+    position: relative;
+    width: 50%;
+    color: gray;
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+
+.left-part {
+  width: 50%;
+  h1 {
+    margin: 50px 0;
+  }
+  .author {
+    margin: 50px 0 0 45px;
+    font-size: 18px;
+  }
+}
+
+.right-part-picture {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}
