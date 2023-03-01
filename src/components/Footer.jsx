@@ -1,6 +1,7 @@
 import React from "react";
 //Style Import
 import "../styles/footer.scss";
+
 //React Icons Import
 import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
@@ -61,13 +62,13 @@ const Footer = () => {
           <FaGooglePlusG />
         </div>
       </div>
-      <a href="#up">
-        <div className="up-button">
+      <div className="up-button">
+        <a href="#up">
           <div className="button">
             <MdOutlineKeyboardArrowUp />
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   );
 };

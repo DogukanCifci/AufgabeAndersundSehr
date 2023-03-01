@@ -1,34 +1,67 @@
+//Für linear gradient background
+
+.footer-container::after {
+  content: "";
+  width: 100%;
+  opacity: 0.8;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgb(121, 9, 115);
+  background: linear-gradient(
+    30deg,
+    rgba(121, 9, 115, 1) 35%,
+    rgba(25, 84, 150, 1) 62%
+  );
+  z-index: -10;
+}
+
 .footer-container {
-  background-image: url("../assets/19859.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP9pHGfpvoQk4BCU127Z0CsGAZETlBHdS4DQ&usqp=CAU");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 .each-icon {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
+  padding: 40px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
   .footer-icon {
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 50%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 12px;
   }
 }
 
 .logos {
   display: flex;
-  gap: 30px;
+  color: white;
+  gap: 40px;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  font-size: 25px;
+  margin: 70px 0 50px 0;
+
+  .each-logos {
+    font-size: 28px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
 }
 
 .up-button {
@@ -38,6 +71,9 @@
   position: absolute;
   bottom: -20px;
   left: calc(50%);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button {
@@ -49,9 +85,10 @@
   border-radius: 50%;
   font-weight: 900;
   color: purple;
-  font-size: 24px;
+  font-size: 32px;
   margin: -20px;
   transition: all 0.3s ease-in-out;
+
   &:hover {
     background: rgb(23, 100, 168);
     cursor: pointer;
