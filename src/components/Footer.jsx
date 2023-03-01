@@ -21,7 +21,7 @@ const Footer = () => {
       id="contact"
       onClick={() => setOpen(false)}
     >
-      <div className="footer-icon-container container grid grid-cols-2 md:grid-cols-4">
+      <div className="footer-icon-container container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
         <div className="each-icon">
           <div className="footer-icon">
             <IoLocationOutline />

@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="fixed pt-11 top-0 right-0 left-0 transition-all duration-500"
+      className="fixed z-50 pt-11 top-0 right-0 left-0 transition-all duration-500"
       style={
         backgroundColor
           ? {
@@ -37,7 +37,7 @@ const Navbar = () => {
           : { backgroundColor: "transparent" }
       }
     >
-      <div className="flex justify-between h-[80px] items-center container px-5">
+      <div className="flex justify-between h-[80px] items-center container navbar-container">
         <div className="">
           <div className="flex items-center ">
             <img
@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="navbar__right hidden md:flex">
           <ul>
             <li>
-              <a href="#home">HOME</a>
+              <a href="#up">HOME</a>
             </li>
             <li>
               <a href="#projects">PROJECTS</a>
@@ -75,13 +75,13 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
         />
         <div
-          className={`md:hidden absolute top-[140px] right-0 text-white text-bold w-full ${
+          className={`md:hidden absolute z-50 top-[140px] right-0 text-white text-bold w-full ${
             open ? "h-[150px] bg-slate-600 opacity-80 text-center" : "h-0"
           } transition-all duration-300 overflow-hidden`}
         >
           <ul>
             <li>
-              <a href="#home">HOME</a>
+              <a href="#up">HOME</a>
             </li>
             <li>
               <a href="#projects">PROJECTS</a>

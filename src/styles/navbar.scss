@@ -112,3 +112,9 @@
   font-size: 34px;
   word-spacing: 3px;
 }
+
+@media (max-width: 1320px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+}

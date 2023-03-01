@@ -3,11 +3,14 @@ import { useContext } from "react";
 import "../styles/navbar.scss";
 import { AuthContext } from "../context/AuthContextProvider";
 
+//Style Import
+import "../styles/header.scss";
+
 const Header = () => {
   const { setOpen } = useContext(AuthContext);
   return (
     <div
-      className="h-[700px] bg-slate-500 background-image pseudo-element"
+      className="header-container h-[700px] bg-slate-500 background-image pseudo-element"
       id="up"
       onClick={() => setOpen(false)}
     >

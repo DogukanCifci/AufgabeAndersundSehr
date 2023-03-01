@@ -58,3 +58,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 1320px) {
+  .general-container {
+    padding: 0 20px;
+  }
+}

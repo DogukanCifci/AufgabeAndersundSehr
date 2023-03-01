@@ -14,8 +14,8 @@ const Events = () => {
       id="blogs"
       onClick={() => setOpen(false)}
     >
-      <h1 className="title">News & events</h1>
-      <div className="cards-container grid grid-cols-1 md:grid-cols-3  ">
+      <h1 className="title mb-12">News & events</h1>
+      <div className="cards-container grid grid-cols-1 md:grid-cols-3">
         {data.map((element, index) => {
           return <EventsCards key={index} element={element} />;
         })}
