@@ -71,8 +71,8 @@ const Navbar = () => {
           onClick={() => setOpen(!open)}
         />
         <div
-          className={`md:hidden absolute top-[80px] right-0 text-white text-bold w-full ${
-            open ? "h-[150px]" : "h-0"
+          className={`md:hidden absolute top-[140px] right-0 text-white text-bold w-full ${
+            open ? "h-[150px] bg-slate-600 opacity-80 text-center" : "h-0"
           } transition-all duration-300 overflow-hidden`}
         >
           <ul>
