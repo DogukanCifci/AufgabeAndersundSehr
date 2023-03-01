@@ -1,7 +1,4 @@
 import React from "react";
-import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContextProvider";
-import { MyButton } from "../../styles/ButtonStyle";
 
 //Style Import
 import "../../styles/testimonials.scss";
@@ -9,6 +6,7 @@ import "../../styles/testimonials.scss";
 //Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
+
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 

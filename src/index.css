@@ -23,3 +23,7 @@ body {
   max-width: 1300px;
   margin-inline: auto;
 }
+
+img {
+  object-fit: cover;
+}

@@ -14,7 +14,7 @@ const Projects = () => {
       onClick={() => setOpen(false)}
     >
       <h1 className="our-project title container">Our Projects</h1>
-      <div className="project-images grid grid-cols-2 md:grid-cols-4 ">
+      <div className="project-images grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
         <img
           src="https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489__480.jpg"
           alt=""
