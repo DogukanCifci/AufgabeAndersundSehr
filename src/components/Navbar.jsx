@@ -22,12 +22,13 @@ const Navbar = () => {
 
   return (
     <div
-      className="fixed top-0 right-0 left-0 transition-all duration-500"
+      className="fixed pt-11 top-0 right-0 left-0 transition-all duration-500"
       style={
         backgroundColor
           ? {
               backgroundColor: "rgba(0,0,0,.7)",
               boxShadow: "0 4px 10px 0 rgba(0,0,0,.03)",
+              padding: "30px 0",
             }
           : { backgroundColor: "transparent" }
       }
@@ -36,11 +37,11 @@ const Navbar = () => {
         <div className="">
           <div className="flex items-center ">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/001/200/601/non_2x/triangle-logo-png.png"
+              src="https://w7.pngwing.com/pngs/248/981/png-transparent-triangle-logo-brand-triangle-angle-white-text-thumbnail.png"
               alt=""
               className="w-[60px]"
             />
-            <div className="text-white">
+            <div className="text-white baslik">
               <span className="font-extrabold ml-4 mr-1">ARCHI</span> NEXT
             </div>
           </div>
