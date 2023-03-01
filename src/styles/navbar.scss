@@ -1,5 +1,5 @@
 .background-image {
-  background-image: url("https://cdn.pixabay.com/photo/2023/02/14/18/55/flowers-7790227_960_720.jpg");
+  background-image: url("https://i.pinimg.com/originals/51/aa/f3/51aaf3ed59ca1ac7bc45669bf34b04b0.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,7 +14,6 @@
 
 //NAVBAR TOP PART
 .navbar {
-  border: 1px solid white;
   width: 75%;
   margin-inline: auto;
   display: flex;
@@ -77,4 +76,11 @@
     font-weight: 30px;
     font-weight: 900;
   }
+}
+
+.header-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 34px;
+  word-spacing: 3px;
 }

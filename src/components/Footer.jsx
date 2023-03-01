@@ -11,7 +11,7 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="contact">
       <div className="footer-icon-container container grid grid-cols-2 md:grid-cols-4">
         <div className="each-icon">
           <div className="footer-icon">
@@ -61,11 +61,13 @@ const Footer = () => {
           <FaGooglePlusG />
         </div>
       </div>
-      <div className="up-button">
-        <div className="button">
-          <MdOutlineKeyboardArrowUp />
+      <a href="#up">
+        <div className="up-button">
+          <div className="button">
+            <MdOutlineKeyboardArrowUp />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
