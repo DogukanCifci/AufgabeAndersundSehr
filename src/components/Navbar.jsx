@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { AuthContext } from "../context/AuthContextProvider";
+
 //Style Import
 import "../styles/navbar.scss";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useContext } from "react";
+
 const Navbar = () => {
-  const [open, setOpen] = useState(false); //Für Hamburger Menu
+  const { open, setOpen } = useContext(AuthContext);
   const [backgroundColor, setBackgroundColor] = useState(false); //Für die Farbeänderung von Navbar beim Scrollen
 
   //Wenn der Benutzer die Maus scrollt, wird die Farbe von Navbar scharz sein
@@ -86,7 +90,7 @@ const Navbar = () => {
               <a href="#solutions">SOLUTIONS</a>
             </li>
             <li>
-              <a href="#blog">BLOG</a>
+              <a href="#blogs">BLOG</a>
             </li>
             <li>
               <a href="#contact">CONTACT</a>

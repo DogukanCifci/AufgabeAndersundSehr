@@ -9,10 +9,18 @@ import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { FaFax, FaFacebookF, FaTwitter, FaGooglePlusG } from "react-icons/fa";
 import { RiPinterestFill } from "react-icons/ri";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContextProvider";
 
 const Footer = () => {
+  const { setOpen } = useContext(AuthContext);
+
   return (
-    <div className="footer-container" id="contact">
+    <div
+      className="footer-container"
+      id="contact"
+      onClick={() => setOpen(false)}
+    >
       <div className="footer-icon-container container grid grid-cols-2 md:grid-cols-4">
         <div className="each-icon">
           <div className="footer-icon">

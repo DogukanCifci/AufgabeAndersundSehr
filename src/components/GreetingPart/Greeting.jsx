@@ -5,10 +5,14 @@ import GreetingCards from "./GreetingCards.jsx";
 import { data } from "../GreetingPart/data.js";
 //Style Import
 import "../../styles/greetingCards.scss";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContextProvider.jsx";
 
 const Greeting = () => {
+  const { setOpen } = useContext(AuthContext);
+
   return (
-    <div className="general-container">
+    <div className="general-container" onClick={() => setOpen(false)}>
       <div className="container card-outside grid grid-cols-1 gap-4 md:grid-cols-3 text-center align-middle px-6 lg:px-0">
         {data.map((element, index) => {
           return (

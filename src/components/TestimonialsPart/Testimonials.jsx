@@ -1,11 +1,25 @@
 import React from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContextProvider";
 import { MyButton } from "../../styles/ButtonStyle";
 //Style Import
 import "../../styles/testimonials.scss";
 
+//Swiper
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 const Testimonials = () => {
+  const { setOpen } = useContext(AuthContext);
+
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" onClick={() => setOpen(false)}>
       <div className="content ">
         <div className="left-part">
           <h1 className="title">What people say</h1>

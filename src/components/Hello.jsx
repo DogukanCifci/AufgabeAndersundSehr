@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/AuthContextProvider";
 import { MyButton } from "../styles/ButtonStyle";
 //Style Import
 import "../styles/hello.scss";
 
 const Hello = () => {
+  const { setOpen } = useContext(AuthContext);
+
   return (
-    <div className="hello-container container grid grid-cols-1 md:grid-cols-2 text-center md:text-left">
+    <div
+      className="hello-container container grid grid-cols-1 md:grid-cols-2 text-center md:text-left"
+      onClick={() => setOpen(false)}
+    >
       <div className="description">
         <h1 className="title">Hello!</h1>
         <p>

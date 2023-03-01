@@ -1,10 +1,18 @@
 import React from "react";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContextProvider";
 //Style Import
 import "../styles/projects.scss";
 
 const Projects = () => {
+  const { setOpen } = useContext(AuthContext);
+
   return (
-    <div className="projects-container" id="projects">
+    <div
+      className="projects-container"
+      id="projects"
+      onClick={() => setOpen(false)}
+    >
       <h1 className="our-project title container">Our Projects</h1>
       <div className="project-images grid grid-cols-2 md:grid-cols-4 ">
         <img
