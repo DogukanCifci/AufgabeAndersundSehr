@@ -5,7 +5,7 @@ import "../styles/hello.scss";
 
 const Hello = () => {
   return (
-    <div className="hello-container container grid grid-cols-1 lg:grid-cols-2">
+    <div className="hello-container container grid grid-cols-1 md:grid-cols-2 text-center md:text-left">
       <div className="description">
         <h1 className="title">Hello!</h1>
         <p>
@@ -17,7 +17,7 @@ const Hello = () => {
           debitis saepe quidem maxime perferendis ut voluptatibus rem!
         </p>
 
-        <MyButton>Read More</MyButton>
+        <MyButton className="hello-button">Read More</MyButton>
       </div>
       <div className="hello-image">
         <img

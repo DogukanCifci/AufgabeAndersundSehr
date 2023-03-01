@@ -11,7 +11,7 @@ const Solutions = () => {
     <div className="solutions-container container">
       <div id="solutions"></div>
       <h1 className="title">Solutions</h1>
-      <div className="solution-cards-container grid grid-cols-1 md:grid-cols-2 text-center md:text-left">
+      <div className="solution-cards-container grid grid-cols-1 md:grid-cols-2 text-center md:text-left pb-12 md:pb-0">
         {data.map((element, index) => {
           return <SolutionsCard key={index} element={element} />;
         })}

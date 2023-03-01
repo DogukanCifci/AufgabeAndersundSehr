@@ -2,9 +2,6 @@ import React from "react";
 import { MyButton } from "../../styles/ButtonStyle";
 import "../../styles/greetingCards.scss";
 
-//Fotos import
-import foto1 from "../../assets/foto1.png";
-
 const GreetingCards = ({ element }) => {
   const { title, icon, description } = element;
   return (

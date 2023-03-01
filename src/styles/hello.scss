@@ -1,10 +1,20 @@
 .hello-container {
   margin-top: 120px;
+
+  @media (max-width: 768px) {
+    .hello-button {
+      margin-inline: auto;
+    }
+    .hello-image {
+      margin-inline: auto;
+    }
+  }
   .description {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-right: 100px;
+
     p {
       color: gray;
       font-size: 18px;

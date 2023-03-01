@@ -8,15 +8,17 @@ const EventsCards = ({ element }) => {
   const { date, month, title, description } = element;
   return (
     <div>
-      <div className="header">
-        <div className="datum">
+      <div className="header text-center md:text-left pb-12 md:pb-0">
+        <div className="datum text-center md:text-left pb-12 md:pb-0">
           <p className="date">{date}</p>
           <p className="month">{month}</p>
         </div>
         <div className="card-title">{title}</div>
       </div>
       <div className="card-body w-full md:w-[55%]">{description}</div>
-      <MyButton>Read More</MyButton>
+      <MyButton className="event-button" type="button">
+        Read More
+      </MyButton>
     </div>
   );
 };
