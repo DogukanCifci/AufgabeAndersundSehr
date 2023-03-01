@@ -9,7 +9,7 @@ import "../../styles/greetingCards.scss";
 const Greeting = () => {
   return (
     <div className="general-container">
-      <div className="container card-outside grid grid-cols-1 gap-4 md:grid-cols-2 text-center align-middle lg:grid-cols-3 px-6 lg:px-0">
+      <div className="container card-outside grid grid-cols-1 gap-4 md:grid-cols-3 text-center align-middle px-6 lg:px-0">
         {data.map((element, index) => {
           return (
             <GreetingCards

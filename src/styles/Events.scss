@@ -1,6 +1,12 @@
 .event-container {
   padding-top: 80px;
   margin-bottom: 120px;
+  @media (max-width: 768px) {
+    .event-button {
+      margin-bottom: 40px;
+      margin-inline: auto;
+    }
+  }
 }
 
 .header {

@@ -8,13 +8,17 @@
     .hello-image {
       margin-inline: auto;
     }
+    p {
+      width: 100%;
+    }
   }
   .description {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-right: 100px;
-
+    @media (min-width: 768) {
+      margin-right: 90px;
+    }
     p {
       color: gray;
       font-size: 18px;
