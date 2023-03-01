@@ -1,7 +1,5 @@
 .general-container {
-  background-color: aliceblue;
   margin-inline: auto;
-  border: 3px solid white;
 }
 
 .greeting-container {
@@ -17,6 +15,7 @@
 }
 
 .cards {
+  width: 80%;
   color: black;
   background-color: white;
   display: flex;
@@ -25,7 +24,6 @@
   align-items: center;
   gap: 30px;
   transition: all 0.3s ease-in-out;
-  border-radius: 3px;
   &:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
@@ -49,4 +47,11 @@
     color: gray;
     line-height: 30px;
   }
+}
+
+.card-outside {
+  margin: -180px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }

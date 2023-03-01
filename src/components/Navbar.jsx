@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div
-      className=" fixed top-0 right-0 left-0 transition-all duration-500"
+      className="fixed top-0 right-0 left-0 transition-all duration-500"
       style={
         backgroundColor
           ? {
